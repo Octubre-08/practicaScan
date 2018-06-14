@@ -1,11 +1,17 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>
-      About
+      Historial
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+  <ion-list no-lines>
+    <button ion-item *ngFor="let item of historial" i=index>
+      <h3>{{item.info}}</h3>
+      <p>{{item.info}}</p>
+    </button>
+  </ion-list>
 
 </ion-content>
